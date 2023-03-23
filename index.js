@@ -28,8 +28,6 @@ app.get("/api/hello", function (req, res) {
  * project-solution-code
  *************************/
 
-const os = require("os");
-
 app.get("/api/whoami", (req, res) => {
   // req.header just works if request came from proxy
   const ipAddress = req.header("x-forwarede-for") || req.socket.remoteAddress;
